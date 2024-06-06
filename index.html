@@ -3,32 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Tienda Deportiva</title>
 </head>
 <body>
   
   <header class="header">
     <nav class="nav">
-      <img src="" alt="" class="nav__icon">
       <h1>Tienda Deportiva</h1>
+      <i class='bx bx-football'></i>
     </nav>
   </header>
 
   <main class="main">
     <section class="product-card">
-      <div class="card">
-        <h2 class="card__title">Productos</h2>
+      <div class="card__title">
+        <h2>Productos</h2>
       </div>
       <div class="card__container">
-        <div class="card__img">
-          <img src="./images/titular.jpg" alt="" class="card__img--src">
+        
+        <div class="card">
+          <div class="card__img">
+            <img src="./images/titular.jpg" alt="" class="card__img--src">
+          </div>
+          <span></span>
+          <p class="card__name">Camiseta Titular</p>
+          <div class="card__container--price">
+            <p class="card__price">$250.000</p>
+            <i class='bx bxs-trash' ></i>
+          </div>
         </div>
-        <span></span>
-        <p class="card__name">Camiseta Titular</p>
-        <div class="card__container--price">
-          <p class="card__price">$250.000</p>
-          <img src="#" alt="" class="card__delete">
+
+        <div class="card">
+          <div class="card__img">
+            <img src="./images/titular.jpg" alt="" class="card__img--src">
+          </div>
+          <span></span>
+          <p class="card__name">Camiseta Titular</p>
+          <div class="card__container--price">
+            <p class="card__price">$250.000</p>
+            <i class='bx bxs-trash' ></i>
+          </div>
         </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="./images/titular.jpg" alt="" class="card__img--src">
+          </div>
+          <span></span>
+          <p class="card__name">Camiseta Titular</p>
+          <div class="card__container--price">
+            <p class="card__price">$250.000</p>
+            <i class='bx bxs-trash' ></i>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -58,18 +89,21 @@
   </main>
 
   <footer class="footer">
+    <span class="footer__span"></span>
     <div class="copyright">
-      <p>&copy Copyright PierreDev - 2024</p>
+      <i class='bx bx-copyright' ></i>
+      <p>Copyright PierreDev - 2024</p>
+      <span>|</span>
     </div>
     <div class="social">
-      <div class="social__container">
-        <img src="" alt="" class="social__container--icon">
+      <a class="social__container" href="https://github.com/JeanPi22?tab=repositories" target="_blank">
+        <i class='bx bxl-github' ></i>
         <p class="social__container--info">GitHub</p>
-      </div>
-      <div class="social__container">
-        <img src="" alt="" class="social__container--icon">
+      </a>
+      <a class="social__container" href="https://www.linkedin.com/in/jean-pierre-pe%C3%B1a-6672572b6/" target="_blank">
+        <i class='bx bxl-linkedin-square' ></i>
         <p class="social__container--info">LinkedIn</p>
-      </div>
+      </a>
     </div>
   </footer>
 
