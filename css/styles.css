@@ -7,6 +7,8 @@
   --opcional:#383e45;
 }
 
+/* Elementos Globales */
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -22,25 +24,24 @@ a {
   text-decoration: none;
 }
 
+/* Navbar */
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 8rem;
+  background-color: var(--secundary-color);
+  border-bottom: 0.3rem solid var(--secundary-color);
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
-.nav h1, .bx-football {
+.nav h1 {
   font-weight: 700;
   font-size: 3rem;
-  color: var(--secundary-color);
-  transition: color 0.3s ease;
+  color: var(--primary-color);
 }
-.bx-football {
-  font-size: 3.5rem;
-  margin-left: 1rem;
-}
-.nav h1:hover, .bx-football:hover {
-  color: white;
-}
+
+/* main */
 
 .main {
   margin-top: 5rem;
@@ -49,6 +50,9 @@ a {
   justify-content: space-between;
   gap: 5rem ;
 }
+
+/* productos */
+
 .product-card {
   width: 60%;
   display: flex;
@@ -75,12 +79,13 @@ a {
   margin-top: 2.5rem;
 }
 .card {
-  width: 20rem;
+  width: 24rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
   border-radius: 2rem;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4);
 }
 .card__img {
   overflow: hidden;
@@ -98,8 +103,8 @@ a {
   background-color: var(--secundary-color);
 }
 .card__name {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--primary-color);
 }
 .card__container--price {
@@ -108,18 +113,94 @@ a {
   align-items: center;
   justify-content: space-between;
   font-size: 1.6rem;
+  font-weight: 600;
   color: var(--primary-color);
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: var(--secundary-color);
   border-radius: 0 0 2rem 2rem;
   margin-top: 1.5rem;
 }
+.bxs-trash {
+  font-size: 2rem;
+  transition: color 0.3s ease; 
+}
+.bxs-trash:hover {
+  color: var(--opcional);
+}
+
+/* Agregar Productos */
+
 .product-form {
   width: 40%;
 }
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-top: 2.5rem;
+  backdrop-filter: blur(0.55rem);
+  -webkit-backdrop-filter: blur(0.55rem);
+  background: rgba(255, 255, 255, 0.75);
+  border: 0.1rem solid rgba(255, 255, 255, 0.01);
+  border-radius: 1.6rem;
+  box-shadow: 0 0.4rem 3rem rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  background: rgba(255, 255, 255, 0.30);
+  border: 0.1rem solid rgba(255, 255, 255, 0.34);  
+}
+.form__field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.form__field--title {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.form__field--input {
+  height: 4.5rem;
+  padding: 1rem 1rem 1rem 4rem;
+  margin-bottom: 2.5rem;
+}
+.bxs-t-shirt, .bx-dollar-circle, .bx-image-alt {
+  position: absolute;
+  left: 1rem;
+  font-size: 2.5rem;
+  top: 35%
+}
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.form__button--btn {
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--secundary-color);
+  border: none;
+  border-radius: 1.5rem;
+  transition: color 0.3s ease; 
+}
+.form__button--btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--secundary-color);
+  border: 0.3rem solid var(--secundary-color);
+}
+
+/* footer */
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -163,4 +244,38 @@ a {
 }
 .social__container i {
   margin-right: 0.3rem;
+}
+
+@media (max-width: 768px) {
+
+  .main {
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .product-card {
+    width: 100%;
+  }
+  .product-form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  body, .main, .footer {
+    width: 100%;
+    min-width: 320px; 
+  }
+  .main {
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .product-card {
+    width: 100%;
+  }
+  .product-form {
+    width: 100%
+  }
 }
