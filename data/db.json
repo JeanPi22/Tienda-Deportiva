@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Camiseta Titular",
+      "price": "$310.000",
+      "image": "../images/titular.jpg",
+      "id": 1
+    },
+    {
+      "name": "Chompa",
+      "price": "$250.000",
+      "image": "../images/2.jpg",
+      "id": 2
+    },
+    {
+      "name": "Camiseta Retro",
+      "price": "$150.000",
+      "image": "../images/camiseta-silueta-escudo-negra-atletico-nacional-2022.jpg",
+      "id": 3
+    },
+    {
+      "name": "Camiseta Sam",
+      "price": "$170.000",
+      "image": "../images/3.jpg",
+      "id": 4
+    }
+  ]
+}

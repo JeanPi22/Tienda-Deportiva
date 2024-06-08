@@ -1,0 +1,12 @@
+{
+  "name": "06-tienda-deportiva",
+  "version": "1.0.0",
+  "description": "<p>\r Callenger del programa ONE-Oracle Next Education con Alura Latan y Oracle. En este desafío se desarrolla una aplicación para listar, registrar y eliminar productos usando HTML, CSS y JAVASCRIPT, aplicando conceptos como la manipulación del DOM, promesas y programación asíncrona.\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./data/db.json --port 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

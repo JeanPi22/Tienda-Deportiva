@@ -13,8 +13,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  /* width: 100%; */
-  /* min-width: 320px; */
+  min-width: 320px;
   height: 100vh;  
   overflow: auto;
   background: var(--primary-color);
@@ -50,11 +49,14 @@ a {
   justify-content: space-between;
   gap: 5rem ;
 }
+.main h2 {
+  text-align: center;
+}
 
 /* productos */
 
 .product-card {
-  width: 60%;
+  width: 80rem;
   display: flex;
   flex-direction: column;
 }
@@ -131,7 +133,7 @@ a {
 /* Agregar Productos */
 
 .product-form {
-  width: 40%;
+  width: 53rem;
 }
 .form__container {
   display: flex;
@@ -167,6 +169,11 @@ a {
   height: 4.5rem;
   padding: 1rem 1rem 1rem 4rem;
   margin-bottom: 2.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+.form__field--input:focus {
+  outline: none;
 }
 .bxs-t-shirt, .bx-dollar-circle, .bx-image-alt {
   position: absolute;
@@ -188,12 +195,10 @@ a {
   background-color: var(--secundary-color);
   border: none;
   border-radius: 1.5rem;
-  transition: color 0.3s ease; 
 }
 .form__button--btn:hover {
   cursor: pointer;
-  background-color: transparent;
-  color: var(--secundary-color);
+  background-color: white;
   border: 0.3rem solid var(--secundary-color);
 }
 
@@ -246,36 +251,58 @@ a {
   margin-right: 0.3rem;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 1240px) {
   .main {
     gap: 3rem;
+  }
+}
+
+@media (max-width: 968px) {
+  
+  .product-card {
+    width: 45%;
+  }
+  .product-form {
+    width: 55%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .body, .main, .footer {
+    width: 100%;
+  }
+  .main {
     flex-direction: column-reverse;
   }
   .product-card {
     width: 100%;
   }
   .product-form {
-    width: 70%;
+    width: 50rem;
     margin: 0 auto;
+  }
+  .form__container {
+    padding: 2.8rem;
   }
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 630px) {
 
   body, .main, .footer {
-    width: 100%;
     min-width: 320px; 
   }
   .main {
-    gap: 3rem;
     flex-direction: column-reverse;
   }
-  .product-card {
+  .product-form {
     width: 100%;
   }
-  .product-form {
-    width: 100%
+  .footer {
+    height: 10rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
