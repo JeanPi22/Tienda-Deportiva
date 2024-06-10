@@ -2,27 +2,39 @@
   "products": [
     {
       "name": "Camiseta Titular",
-      "price": "$310.000",
+      "price": "310.000",
       "image": "../images/titular.jpg",
       "id": 1
     },
     {
-      "name": "Chompa",
-      "price": "$250.000",
+      "name": "Chompa Verde",
+      "price": "250.000",
       "image": "../images/2.jpg",
       "id": 2
     },
     {
       "name": "Camiseta Retro",
-      "price": "$150.000",
+      "price": "150.000",
       "image": "../images/camiseta-silueta-escudo-negra-atletico-nacional-2022.jpg",
       "id": 3
     },
     {
       "name": "Camiseta Sam",
-      "price": "$170.000",
+      "price": "170.000",
       "image": "../images/3.jpg",
       "id": 4
+    },
+    {
+      "id": "b4c6",
+      "name": "Chompa Gris",
+      "price": "250000",
+      "image": "https://tiendaverde.com.co/2922-large_default/chompa-gris-cierre-hombre-nike-2024-nike.jpg"
+    },
+    {
+      "id": "571b",
+      "name": "Gorra Blanca",
+      "price": "90.000",
+      "image": "https://tiendaverde.com.co/1390-large_default/gorra-core-blanca-atletico-nacional-2021.jpg"
     }
   ]
 }

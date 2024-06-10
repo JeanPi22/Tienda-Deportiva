@@ -42,25 +42,25 @@
       <div class="card__title">
         <h2>Agregar Producto</h2>
       </div>
-      <form action="" class="form__container">
+      <form action="" class="form__container" data-product>
         <label for="" class="form__field">
           <span class="form__field--title">Nombre Producto</span>
           <i class='bx bxs-t-shirt'></i>
-          <input type="text" placeholder="Producto" class="form__field--input">
+          <input type="text" placeholder="Producto" class="form__field--input" required data-name>
         </label>
         <label for="" class="form__field">
           <span class="form__field--title">Precio</span>
           <i class='bx bx-dollar-circle' ></i>
-          <input type="text" placeholder="Precio" class="form__field--input" >
+          <input type="text" placeholder="Precio" class="form__field--input" required data-price>
         </label>
         <label for="" class="form__field">
           <span class="form__field--title">Cargar Imagen</span>
           <i class='bx bx-image-alt' ></i>
-          <input type="text" class="form__field--input">
+          <input type="text" placeholder="Url" class="form__field--input" required data-image>
         </label>
         <div class="form__button">
-          <button class="form__button--btn">Enviar</button>
-          <button class="form__button--btn">Limpiar</button>
+          <button class="form__button--btn" type="submit">Enviar</button>
+          <button class="form__button--btn" type="reset">Limpiar</button>
         </div>
       </form>
     </section>
@@ -86,6 +86,7 @@
   </footer>
 
   <script src="./js/mostrarCards.js" type="module"></script>
+  <script src="./js/crearProducto.js" type="module"></script>
 
 </body>
 </html>
