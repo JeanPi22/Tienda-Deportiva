@@ -3,7 +3,6 @@ const urlApi = "http://localhost:3000/products";
 async function listProducts() {
   const connection = await fetch(urlApi); //Solicitud GET
   const connectionData = await connection.json(); //convertir Respuesta en .json
-  console.log(connectionData);
   return connectionData;
 }
 
@@ -25,10 +24,28 @@ async function sendProduct(name, price, image) {
 
   const connectionData = await connection.json(); //convertir Respuesta en .json
 
-  return connectionData
+  return connectionData;
+}
+
+async function deleteProduct(id) {
+  
+  //Solicitud DELETE
+  const connection = await fetch(`${urlApi}/${id}`, {
+    method: "DELETE",
+    headers:{"content-type" : "application/json"}
+  });
+
+  if (!connection.ok) {
+    throw new Error("Ha ocurrido un error al eliminar el producto");
+  }
+
+  const connectionData = await connection.json(); //convertir Respuesta en .json
+
+  return connectionData;
 }
 
 export const connetionAPI = {
   listProducts,
-  sendProduct
-};
+  sendProduct,
+  deleteProduct
+}

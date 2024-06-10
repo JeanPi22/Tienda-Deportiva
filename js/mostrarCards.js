@@ -8,7 +8,7 @@ function formatNumber(number) {
 }
 
 //Función para crear card de productos
-export default function createCard (name, price, image) {
+export default function createCard (name, price, image, id) {
 
   // Llamado de la función ppara formatear precio
   const formatPrice = formatNumber(price);
@@ -23,7 +23,7 @@ export default function createCard (name, price, image) {
   <p class="card__name">${name}</p>
   <div class="card__container--price">
     <p class="card__price">$${formatPrice}</p>
-    <i class='bx bxs-trash' ></i>
+    <i class='bx bxs-trash' data-id="${id}"></i>
   </div>
   `;
   return card;
@@ -34,7 +34,7 @@ async function listProducts() {
     //Se asigna a la variable "listApi" la función "listProducts()" de la conexionAPI.js
     const listApi = await connetionAPI.listProducts();
     listApi.forEach(card => listCard.appendChild(
-      createCard(card.name, card.price, card.image)
+      createCard(card.name, card.price, card.image, card.id)
     ));
   }
   catch (error) {

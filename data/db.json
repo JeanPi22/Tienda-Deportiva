@@ -1,40 +1,40 @@
 {
   "products": [
     {
+      "id": "1",
       "name": "Camiseta Titular",
       "price": "310.000",
-      "image": "../images/titular.jpg",
-      "id": 1
+      "image": "../images/titular.jpg"
     },
     {
+      "id": "2",
       "name": "Chompa Verde",
       "price": "250.000",
-      "image": "../images/2.jpg",
-      "id": 2
+      "image": "../images/2.jpg"
     },
     {
-      "name": "Camiseta Retro",
-      "price": "150.000",
-      "image": "../images/camiseta-silueta-escudo-negra-atletico-nacional-2022.jpg",
-      "id": 3
+      "id": "feec",
+      "name": "Gorra Blanca",
+      "price": "90000",
+      "image": "https://tiendaverde.com.co/1390-large_default/gorra-core-blanca-atletico-nacional-2021.jpg"
     },
     {
-      "name": "Camiseta Sam",
-      "price": "170.000",
-      "image": "../images/3.jpg",
-      "id": 4
+      "id": "3d68",
+      "name": "Camiseta Alterna",
+      "price": "310000",
+      "image": "https://tiendaverde.com.co/2805-large_default/camiseta-alterna-hombre-2024-nike-2024.jpg"
     },
     {
-      "id": "b4c6",
+      "id": "1488",
       "name": "Chompa Gris",
       "price": "250000",
       "image": "https://tiendaverde.com.co/2922-large_default/chompa-gris-cierre-hombre-nike-2024-nike.jpg"
     },
     {
-      "id": "571b",
-      "name": "Gorra Blanca",
-      "price": "90.000",
-      "image": "https://tiendaverde.com.co/1390-large_default/gorra-core-blanca-atletico-nacional-2021.jpg"
+      "id": "3f74",
+      "name": "Buzo Verde",
+      "price": "130000",
+      "image": "https://tiendaverde.com.co/1304-large_default/buso-con-capucha-verde-silueta-escudo-moda-atletico-nacional-2020.jpg"
     }
   ]
 }
